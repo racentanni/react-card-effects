@@ -1,0 +1,57 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+#card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: green;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: black 1px solid;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+.rotate-left {
+  transform: rotate(-15deg);
+}
+
+.rotate-right {
+  transform: rotate(15deg);
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
